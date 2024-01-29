@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Leyla's TeaCafe</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><p>Leyla's TeaCafe</p></div>
+
+        </nav>
+    </header>
+
+    <div class="here">
+        <div class="banner">
+            <h1>Our Mission</h1>
+            <h4>
+                Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch,
+                Fair Trade, Organic Tea
+            </h4>
+        </div>
+    </div>
+
+    <div id="teamonth">
+        <h2>Tea of the Month</h2>
+        <h4>What's Steeping at The Tea Cozy?</h4>
+        <div class="gallery">
+            <div class="gallery-item">
+                <figure class="item">
+                    <img class="thumbnail" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg" alt="berryblitz">
+                </figure>
+                <figure class="item">
+                    <img class="thumbnail" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg" alt="donut">
+                </figure>
+                <figure class="item">
+                    <img class="thumbnail" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg" alt="background">
+                </figure>
+                <figure class="item">
+                    <img class="thumbnail" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg" alt="myrtle-ave">
+                </figure>
+                <figure class="item">
+                    <img class="thumbnail" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg" alt="spiced-rum">
+                </figure>
+            </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img class="popup-thumbnail" src="">
+            </div>
+        </div>
+    
+     
+    </div>
+    <div class="locations">
+        <div class="text-l">
+        <h2>Locations</h2>
+        </div>
+        <div class="container">
+
+            <div class="locations-item">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>Ganja</h3>
+                <p>46/50 Uzeyir Hacibayov</p>
+                <p>Ganja 108</p>
+            </div>
+            <div class="locations-item">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>Baku</h3>
+                <p>Suleyman Rustam street</p>
+                <p>9RJW+J2R</p>
+                <p>Baku 1000</p>
+            </div>
+            <div class="locations-item">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3>Quba</h3>
+                <p>Yusif Mammadaliyev Avenue</p>
+                <p>9RCQ+JGG</p>
+                <p>Quba 1230</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="mid-container">
+            <h2>The Tea Cozy</h2>
+            <p>contact@theteacozy.com</p>
+            <p>999-9999-9999</p>
+        </div>
+
+    </footer>
+    <script>
+        document.querySelectorAll('.gallery-item img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image ').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image ').style.display = 'none';
+            }
+        });
+    </script>        
+</body>
+
+</html>

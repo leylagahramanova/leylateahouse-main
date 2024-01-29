@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-color: #000;
+  color: seashell;
+  font-family: 'Edu SA Beginner';
+}
+
+header {
+  border-bottom: 1px solid seashell;
+}
+
+.main-nav {
+  height: 90px;
+}
+
+.logo {
+  color: white;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: 'Edu SA Beginner', sans-serif;
+}
+
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.navlinks {
+  list-style: none;
+  float: right;
+
+}
+
+.navlinks li {
+  display: inline-block;
+}
+
+.navlinks li a {
+  color: seashell;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right:5px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: #7ebcb9;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #7ebcb9;
+}
+
+li a.contact {
+  background-color: #00adb5;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+
+li a.contact:hover {
+  background-color: #047e85;
+  color: white;
+  border-bottom: none;
+}
+
+@keyframes fade {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+.here {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.banner {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.8;
+}
+
+.teamonth {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  top: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.gallery {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.gallery .gallery-item {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.gallery-item .thumbnail {
+  height: 250px;
+  width: 350px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery .gallery-item .thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.gallery .gallery-item .thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.gallery .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.gallery .popup-image span {
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.gallery .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  max-width: 720px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .gallery .popup-image img {
+    width: 95%;
+  }
+
+
+  .locations-item {
+    width: 5%;
+  }
+
+  .box {
+    height: 50px;
+    width: 50px;
+  }
+
+  .box span:before {
+    height: 1px;
+  }
+}
+@media (min-width:768px){
+
+  .locations-item {
+    width: 5%;
+  }
+
+  .box {
+    height: 50px;
+    width: 50px;
+  }
+
+  .box span:before {
+    height: 1px;
+  }
+}
+.locations {
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-l.p {
+  font-size: 53px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 5%;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.box {
+  border: 2px;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+}
+
+.box span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.box span:before {
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  animation: fade 4s linear infinite;
+}
+
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.box span:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.box span:nth-child(4) {
+  transform: rotate(270deg);
+}
+
+.locations-item {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin:5px;
+  opacity: 0.8;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .locations {
+    padding-top: 70px;
+  }
+}
+
+.mid-container{
+  display: flex;
+  position:relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+
+.close,
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  margin-top: 0.2rem;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .hamburger {
+  display: none;
+}
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+  .navlink{
+    flex-direction: row;
+  }
+  .navlink li {
+    display: block;
+  }
+}
